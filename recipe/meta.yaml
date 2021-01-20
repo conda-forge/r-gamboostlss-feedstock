@@ -39,10 +39,11 @@ test:
 
 about:
   home: For source code, development versions and issue tracker see https://github.com/boost-R/gamboostLSS
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Boosting models for fitting generalized additive models for location, shape and scale ('GAMLSS') to potentially high dimensional data.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
