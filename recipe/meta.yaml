@@ -1,4 +1,4 @@
-{% set version = "2.0-1.1" %}
+{% set version = "2.0-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gamboostLSS_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gamboostLSS/gamboostLSS_{{ version }}.tar.gz
-  sha256: 2f868f3bffbfeb46cf80c52f7e0f363fbfbb3d4d370956ed19980494b2b035ff
+  sha256: 941100ef71e1b588662a99da1ebf1db732d769ccabbab6c46e5ea599b6d38ce2
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,10 +39,11 @@ test:
 
 about:
   home: For source code, development versions and issue tracker see https://github.com/boost-R/gamboostLSS
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Boosting models for fitting generalized additive models for location, shape and scale ('GAMLSS') to potentially high dimensional data.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
