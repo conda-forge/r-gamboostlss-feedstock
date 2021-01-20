@@ -5,11 +5,9 @@ Home: For source code, development versions and issue tracker see https://github
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gamboostlss-feedstock/blob/master/LICENSE.txt)
 
 Summary: Boosting models for fitting generalized additive models for location, shape and scale ('GAMLSS') to potentially high dimensional data.
-
-
 
 Current build status
 ====================
