@@ -1,4 +1,4 @@
-{% set version = "2.0-7" %}
+{% set version = "2.1-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gamboostLSS_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gamboostLSS/gamboostLSS_{{ version }}.tar.gz
-  sha256: 71e8fcb28baf80c81b47f345d3090fea7031d5c75cc5f05e43ab72dd7a54a2d7
+  sha256: ec51f1476e811f7634913014b5830dfbb265656516e8c3170bad6e71017664ea
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
