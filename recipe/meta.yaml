@@ -23,10 +23,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-gamlss.dist
     - r-mboost >=2.8_0
     - r-stabs >=0.5_0
   run:
     - r-base
+    - r-gamlss.dist
     - r-mboost >=2.8_0
     - r-stabs >=0.5_0
 
